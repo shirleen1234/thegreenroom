@@ -1,0 +1,29 @@
+2024-04-19T16:05:23+00:00 DEBUG POST: https://ads.tiktok.com/marketing_api/api/developer/app/create_auto_approve/
+
+{"business_platform":"PROD","smb_id":"tt4b_woocommerce_66229642bfafahttplocalhostthegreenroomwordpress-652wp-admin","smb_name":"PROD","redirect_url":"http:\/\/localhost\/thegreenroom\/wordpress-6.5.2\/wp-admin\/"}
+ ajax: no
+2024-04-19T16:05:23+00:00 DEBUG Tt4b_Mapi_Class::create_open_source_app: Response: 
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+X-Tt-Logid: 20240419160524C15A5654DEB4722CF55E,20240419160524C15A5654DEB4722CF55E
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+x-tt-trace-host: 014a0c39a6ba7c554ff2312cd4410690ec0ac3855a26ea395acb323f60463a92f16844ea23e384a08df878e39a14b893fa7995d64b830d38aeb98d7b5b790c8734cfd9252710ae1a1d26d53875c2bb66c593c4377e1497d825cf51be48455340c26fc12f6abbf4ad96ac8988736b809fce
+x-tt-trace-id: 00-240419160524C15A5654DEB4722CF55E-3393D44D35AEEA10-00
+Server: TLB
+Content-Encoding: gzip
+Content-Length: 221
+X-Origin-Response-Time: 159,23.48.172.89
+X-Akamai-Request-ID: ecfb0a47.149451ae
+Date: Fri, 19 Apr 2024 16:05:25 GMT
+X-Cache: TCP_MISS from a58-27-0-162.deploy.akamaitechnologies.com (AkamaiGHost/11.4.5-55391218) (-)
+Connection: close
+Vary: Accept-Encoding
+X-Cache-Remote: TCP_MISS from a23-48-172-89.deploy.akamaitechnologies.com (AkamaiGHost/11.4.5-55391218) (-)
+x-tt-trace-tag: id=16;cdn-cache=miss;type=dyn
+Server-Timing: cdn-cache; desc=MISS, edge; dur=16, origin; dur=159
+Server-Timing: inner; dur=155
+X-Parent-Response-Time: 173,58.27.0.162
+
+{"code":0,"msg":"ok","data":{"external_data_key":"17e2a115-4f48-4635-90eb-197762a2cf66","app_id":"7359609967663398929","redirect_uri":"http:\/\/localhost\/thegreenroom\/wordpress-6.5.2\/wp-admin\/","app_secret":"c36ca4910c18bea8031e2657285d3b2d0acda6c8"}}
+
