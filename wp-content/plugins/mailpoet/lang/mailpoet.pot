@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the MailPoet plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: MailPoet 4.48.2\n"
+"Project-Id-Version: MailPoet 4.49.0\n"
 "Report-Msgid-Bugs-To: http://support.mailpoet.com/\n"
 "Last-Translator: MailPoet i18n (https://www.transifex.com/organization/wysija)\n"
 "Language-Team: MailPoet i18n <https://www.transifex.com/organization/wysija>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-04-08T15:09:37+00:00\n"
+"POT-Creation-Date: 2024-04-23T07:45:52+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.8.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -213,7 +213,7 @@ msgstr ""
 #: views/form/editor.html:46
 #: views/newsletter/templates/blocks/social/settings.hbs:27
 #: views/newsletter/templates/components/sidebar/styles.hbs:2
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Styles"
 msgstr ""
 
@@ -349,7 +349,7 @@ msgid "Custom Fields"
 msgstr ""
 
 #: views/form/editor.html:116
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Layout"
 msgstr ""
 
@@ -544,7 +544,7 @@ msgstr ""
 #: lib/API/MP/v1/CustomFields.php:27
 #: lib/Automation/Integrations/WordPress/Subjects/UserSubject.php:63
 #: lib/Config/Menu.php:263
-#: lib/EmailEditor/Integrations/MailPoet/EmailEditor.php:50
+#: lib/EmailEditor/Integrations/MailPoet/EmailEditor.php:46
 #: lib/Form/Templates/Templates/InitialForm.php:22
 #: lib/Subscribers/ImportExport/ImportExportFactory.php:60
 #: lib/Subscribers/ImportExport/PersonalDataExporters/SubscriberExporter.php:71
@@ -2726,7 +2726,7 @@ msgstr ""
 #: lib/Config/PopulatorData/Templates/WordPressTheme.php:1266
 #: lib/Config/PopulatorData/Templates/WorldCup.php:725
 #: lib/Config/PopulatorData/Templates/YogaStudio.php:699
-#: lib/EmailEditor/Integrations/MailPoet/EmailEditor.php:84
+#: lib/Newsletter/NewsletterSaveController.php:494
 #: lib/Newsletter/Shortcodes/ShortcodesHelper.php:94
 #: assets/dist/js/commons.js:9
 #: assets/dist/js/email-editor/email_editor.js:15
@@ -2735,7 +2735,7 @@ msgstr ""
 
 #: views/newsletter/editor.html:1297
 #: lib/Config/PopulatorData/Templates/ConfirmInterestBeforeDeactivation.php:163
-#: lib/EmailEditor/Integrations/MailPoet/EmailEditor.php:84
+#: lib/Newsletter/NewsletterSaveController.php:494
 #: lib/Newsletter/Shortcodes/ShortcodesHelper.php:102
 #: assets/dist/js/email-editor/email_editor.js:15
 msgid "Manage subscription"
@@ -3411,7 +3411,7 @@ msgstr ""
 #: assets/dist/js/admin.js:2
 #: assets/dist/js/automation_editor.js:1
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Cancel"
 msgstr ""
 
@@ -3946,7 +3946,7 @@ msgid "Send preview"
 msgstr ""
 
 #: views/newsletter/templates/components/newsletterPreview.hbs:48
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "A MailPoet logo will appear in the footer of all emails sent with the free version of MailPoet."
 msgstr ""
 
@@ -4815,7 +4815,7 @@ msgstr ""
 #: lib/Config/Menu.php:473
 #: assets/dist/js/admin.js:2
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Upgrade"
 msgstr ""
 
@@ -5533,7 +5533,7 @@ msgstr ""
 #: assets/dist/js/admin.js:2
 #: assets/dist/js/automation_editor.js:1
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Activate"
 msgstr ""
 
@@ -8992,7 +8992,7 @@ msgstr ""
 msgid "View MailPoet settings"
 msgstr ""
 
-#: lib/Config/Initializer.php:227
+#: lib/Config/Initializer.php:233
 msgid "Unable to connect to the database (the database is unable to open a file or folder), the connection is likely not configured correctly. Please read our [link] Knowledge Base article [/link] for steps how to resolve it."
 msgstr ""
 
@@ -9008,7 +9008,7 @@ msgstr ""
 
 #: lib/Config/Menu.php:225
 #: lib/Config/Menu.php:226
-#: lib/EmailEditor/Integrations/MailPoet/EmailEditor.php:49
+#: lib/EmailEditor/Integrations/MailPoet/EmailEditor.php:45
 #: assets/dist/js/automation_analytics.js:9
 msgid "Emails"
 msgstr ""
@@ -10126,10 +10126,6 @@ msgstr ""
 msgid "Value cannot be empty"
 msgstr ""
 
-#: lib/EmailEditor/Integrations/MailPoet/EmailEditor.php:81
-msgid "You received this email because you are subscribed to the [site:title]"
-msgstr ""
-
 #: lib/Form/AssetsController.php:94
 msgid "An error has happened while performing a request, please try again later."
 msgstr ""
@@ -11078,6 +11074,10 @@ msgstr ""
 msgid "New Email"
 msgstr ""
 
+#: lib/Newsletter/NewsletterSaveController.php:491
+msgid "You received this email because you are subscribed to the [site:title]"
+msgstr ""
+
 #: lib/Newsletter/NewsletterValidator.php:60
 #: assets/dist/js/admin.js:2
 #: assets/dist/js/newsletter_editor.js:2
@@ -11540,7 +11540,7 @@ msgid "All Tags"
 msgstr ""
 
 #. translators: %s is email address which already exists.
-#: lib/Subscribers/SubscriberSaveController.php:259
+#: lib/Subscribers/SubscriberSaveController.php:273
 msgid "A subscriber with E-mail \"%s\" already exists."
 msgstr ""
 
@@ -13834,17 +13834,17 @@ msgid "Automation flow"
 msgstr ""
 
 #: assets/dist/js/automation_editor.js:1
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Toggle fullscreen mode."
 msgstr ""
 
 #: assets/dist/js/automation_editor.js:1
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Show or hide the settings sidebar."
 msgstr ""
 
 #: assets/dist/js/automation_editor.js:1
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Save your changes."
 msgstr ""
 
@@ -13883,7 +13883,7 @@ msgstr ""
 
 #: assets/dist/js/automation_editor.js:1
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Activating…"
 msgstr ""
 
@@ -15315,7 +15315,7 @@ msgid "MailPoet Sending Service is active"
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "MailPoet Premium is active"
 msgstr ""
 
@@ -15344,112 +15344,112 @@ msgid "You have sent more emails this month than your MailPoet plan includes, an
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Please try again."
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Purchase a MailPoet plan"
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Please purchase a MailPoet plan."
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Purchase"
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Upgrade your MailPoet plan"
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Please upgrade your MailPoet plan."
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Subscribers limit reached"
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Please upgrade your MailPoet plan to continue using MailPoet."
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Download the MailPoet Premium plugin"
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Please download the MailPoet Premium plugin."
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Download"
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Downloading…"
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Plugin installation failed."
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Activate the MailPoet Premium plugin"
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Please activate the MailPoet Premium plugin."
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Reload the page"
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Plugin activation failed."
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Upgrade your MailPoet plan to gain detailed insights into how your subscribers engage with your automations and their purchasing behaviors."
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Automation journeys are not available in your current plan. Upgrade your MailPoet plan to design personalized journeys with multiple steps and conditional branching logic."
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Advanced contact segmentation is not available in your current plan. Upgrade your MailPoet plan to create highly targeted subscriber segments using multiple subscriber properties and AND/OR logic, ensuring you send the right message to the right people."
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Please upgrade your MailPoet plan to gain access to this feature."
 msgstr ""
 
 #: assets/dist/js/commons.js:9
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "The MailPoet Premium plugin was activated. Please reload the page."
 msgstr ""
 
@@ -15733,6 +15733,7 @@ msgid "Send or schedule a newsletter to connect with your subscribers."
 msgstr ""
 
 #: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "No title"
 msgstr ""
 
@@ -15836,16 +15837,37 @@ msgstr ""
 msgid "Fix errors to continue:"
 msgstr ""
 
-#: assets/dist/js/email-editor/email_editor.js:15
-msgid "Dimensions"
-msgstr ""
-
-#: assets/dist/js/email-editor/email_editor.js:15
+#. translators: %s: is a subset of Typography, e.g., 'text' or 'links'.
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Typography"
 msgstr ""
 
-#: assets/dist/js/email-editor/email_editor.js:15
+#: assets/dist/js/email-editor/email_editor.js:18
+msgid "Manage the typography settings for different elements."
+msgstr ""
+
+#: assets/dist/js/email-editor/email_editor.js:18
+msgid "Dimensions"
+msgstr ""
+
+#: assets/dist/js/email-editor/email_editor.js:18
 msgid "Colors"
+msgstr ""
+
+#: assets/dist/js/email-editor/email_editor.js:18
+msgid "Manage the fonts and typography used on text."
+msgstr ""
+
+#: assets/dist/js/email-editor/email_editor.js:18
+msgid "Manage the fonts and typography used on links."
+msgstr ""
+
+#: assets/dist/js/email-editor/email_editor.js:18
+msgid "Manage the fonts and typography used on headings."
+msgstr ""
+
+#: assets/dist/js/email-editor/email_editor.js:18
+msgid "Manage the fonts and typography used on buttons."
 msgstr ""
 
 #: assets/dist/js/marketing-optin-block/marketing-optin-block.js:1
@@ -16141,4 +16163,19 @@ msgstr ""
 #: assets/dist/js/marketing-optin-block/block.json
 msgctxt "block title"
 msgid "MailPoet Marketing Opt-in"
+msgstr ""
+
+#: lib/EmailEditor/Integrations/MailPoet/Blocks/BlockTypes/email-content/block.json
+msgctxt "block title"
+msgid "Email Content"
+msgstr ""
+
+#: lib/EmailEditor/Integrations/MailPoet/Blocks/BlockTypes/email-content/block.json
+msgctxt "block description"
+msgid "Shows email content within the email editor."
+msgstr ""
+
+#: lib/EmailEditor/Integrations/MailPoet/Blocks/BlockTypes/email-content/block.json
+msgctxt "block keyword"
+msgid "MailPoet"
 msgstr ""
